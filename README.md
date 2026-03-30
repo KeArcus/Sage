@@ -152,7 +152,7 @@ graph TD
     User --> Web[🌐 Web UI]
     Desktop --> API[Sage Server API]
     Web --> API
-
+    
     subgraph Core[Core Engine]
         API --> Orch[🧠 Agent Orchestrator]
         Orch -- "Dispatch" --> Flow[📋 AgentFlow]
@@ -168,7 +168,7 @@ graph TD
         Tools <--> RustFS[(RustFS)]
         Orch <--> DB[(SQL Database)]
     end
-
+    
     Core -.-> Obs["👁️ Observability<br/>OpenTelemetry"]
     Core -.-> Workbench["🛠️ Visual Workbench"]
 ```
@@ -181,7 +181,7 @@ graph TD
 
 - **Session Management Refactor**: Global `SessionManager` with parent-child session tracking
 - **AgentFlow Engine**: Declarative workflow orchestration with Router → DeepThink → Mode Switch → Suggest flow
-- **Fibre Mode Optimization**:
+- **Fibre Mode Optimization**: 
   - Dynamic sub-agent spawning with `sys_spawn_agent`
   - Parallel task delegation with `sys_delegate_task`
   - Hour-level long-running task support
@@ -192,17 +192,17 @@ graph TD
 
 ### 💻 **App Layer Updates**
 
-- **Visual Workbench**:
+- **Visual Workbench**: 
   - 20+ rendering components
   - 15+ file format support (PDF, DOCX, PPTX, XLSX, etc.)
   - List/Single view dual mode
   - Timeline navigation
   - Session-isolated state management
-- **Cross-Platform Desktop**:
+- **Cross-Platform Desktop**: 
   - macOS (Intel/Apple Silicon) - DMG
   - Windows - NSIS Installer
   - Linux - DEB support
-- **Real-time Collaboration**:
+- **Real-time Collaboration**: 
   - Message stream optimization
   - File reference extraction
   - Code block highlighting
@@ -232,7 +232,7 @@ graph TD
 
 ### Project Structure
 
-```text
+```
 Sage/
 ├── sagents/                    # Core Agent Framework
 │   ├── agent/                  # Agent implementations

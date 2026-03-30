@@ -52,7 +52,7 @@
 ## ✨ **核心亮点**
 
 - 🧠 **多智能体编排**：支持 **TaskExecutor** (串行)、**FibreAgent** (并行) 和 **AgentFlow** (声明式) 三种编排模式。
-- 🎯 **模型能力最大化**：即使在 **Qwen3.5 35B-A3B** 等小模型上也能稳定完成复杂任务，框架级优化释放模型潜能。
+- � **模型能力最大化**：即使在 **Qwen3.5 35B-A3B** 等小模型上也能稳定完成复杂任务，框架级优化释放模型潜能。
 - 🧩 **内置高稳定性 Skill**：预装多种经过实战验证的 Skill，开箱即用，确保关键任务稳定执行。
 - 🛡️ **安全沙箱**：提供隔离执行环境 (`sagents.utils.sandbox`) 确保智能体代码执行安全。
 - 👁️ **全链路可观测性**：集成 **OpenTelemetry** 追踪，可视化智能体思考与执行路径。
@@ -152,7 +152,7 @@ graph TD
     User --> Web[🌐 Web 界面]
     Desktop --> API[Sage Server API]
     Web --> API
-
+    
     subgraph Core[核心引擎]
         API --> Orch[🧠 智能体编排器]
         Orch -- "调度" --> Flow[📋 AgentFlow]
@@ -168,7 +168,7 @@ graph TD
         Tools <--> RustFS[(RustFS)]
         Orch <--> DB[(SQL 数据库)]
     end
-
+    
     Core -.-> Obs["👁️ 可观测性<br/>OpenTelemetry"]
     Core -.-> Workbench["🛠️ 可视化工作台"]
 ```
@@ -232,7 +232,7 @@ graph TD
 
 ### 项目结构
 
-```text
+```
 Sage/
 ├── sagents/                    # 核心智能体框架
 │   ├── agent/                  # 智能体实现
